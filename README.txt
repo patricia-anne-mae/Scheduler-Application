@@ -35,3 +35,7 @@ On the bottom left corner, a view report button can be utilized to generate diff
 
 A3F- The additional report that I created was appointment by type and location. This will gather all the type
 of appointment and the different location and generate the total for each.
+
+
+
+
