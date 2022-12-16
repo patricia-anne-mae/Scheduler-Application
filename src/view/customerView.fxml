@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="426.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerViewController">
+    <children>
+        <Label layoutX="148.0" layoutY="14.0" text="Customer">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="61.0" text="Customer ID" />
+        <Label layoutX="13.0" layoutY="105.0" text="Customer Name" />
+        <Label layoutX="13.0" layoutY="149.0" text="Address" />
+        <Label layoutX="11.0" layoutY="196.0" text="Zip Code" />
+        <Label layoutX="14.0" layoutY="243.0" text="Contact" />
+        <Label layoutX="14.0" layoutY="285.0" text="Country" />
+        <Label layoutX="14.0" layoutY="327.0" text="Division" />
+        <TextField fx:id="customerIDField" editable="false" layoutX="130.0" layoutY="57.0" prefHeight="26.0" prefWidth="178.0" promptText="Auto-Generated" />
+        <TextField fx:id="customerNameField" layoutX="130.0" layoutY="101.0" prefHeight="26.0" prefWidth="178.0" />
+        <TextField fx:id="customerAddressField" layoutX="130.0" layoutY="145.0" prefHeight="26.0" prefWidth="178.0" />
+        <TextField fx:id="customerZipField" layoutX="130.0" layoutY="192.0" prefHeight="26.0" prefWidth="178.0" />
+        <TextField fx:id="customerContactField" layoutX="130.0" layoutY="239.0" prefHeight="26.0" prefWidth="178.0" />
+        <ComboBox fx:id="customerCountryCombo" layoutX="130.0" layoutY="281.0" onAction="#onActionSelectCountry" prefHeight="26.0" prefWidth="178.0" />
+        <ComboBox fx:id="customerDivisionCombo" layoutX="130.0" layoutY="323.0" prefHeight="26.0" prefWidth="178.0" />
+        <Button fx:id="saveCustomerButton" layoutX="159.0" layoutY="373.0" mnemonicParsing="false" onAction="#onActionSaveCustomer" prefHeight="26.0" prefWidth="59.0" text="Save" />
+        <Button fx:id="cancelCustomerButton" layoutX="232.0" layoutY="373.0" mnemonicParsing="false" onAction="#onActionCancelCustomer" text="Cancel" />
+    </children>
+</AnchorPane>

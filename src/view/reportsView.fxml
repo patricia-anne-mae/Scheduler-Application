@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsViewController">
+    <children>
+        <Label layoutX="259.0" layoutY="14.0" text="Reports">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="reportTextArea" layoutX="14.0" layoutY="52.0" prefHeight="246.0" prefWidth="568.0" />
+        <RadioButton fx:id="appByMonthType" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#onActionViewAppMonth" selected="true" text="Appointment by type and month">
+         <toggleGroup>
+            <ToggleGroup fx:id="reportsToggle" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="contactSchedule" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#onActionViewContact" text="Contact schedule" toggleGroup="$reportsToggle" />
+        <RadioButton fx:id="appByLocation" layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#onActionViewAppLoc" text="Appointment by location and type" toggleGroup="$reportsToggle" />
+        <Button fx:id="generateButton" layoutX="446.0" layoutY="304.0" mnemonicParsing="false" onAction="#onActionGenerate" text="Generate" />
+        <Button fx:id="resetButton" layoutX="523.0" layoutY="304.0" mnemonicParsing="false" onAction="#onActionReset" prefHeight="26.0" prefWidth="58.0" text="Reset" />
+        <Button fx:id="returnToMain" layoutX="489.0" layoutY="396.0" mnemonicParsing="false" onAction="#onActionReturnToMain" text="Return to Main" />
+    </children>
+</AnchorPane>
