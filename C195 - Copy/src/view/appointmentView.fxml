@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="476.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.appointmentViewController">
+    <children>
+        <Label layoutX="166.0" layoutY="14.0" text="Appointment">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="57.0" text="Appointment ID " />
+        <Label layoutX="14.0" layoutY="91.0" text="Appointment Title" />
+        <Label layoutX="14.0" layoutY="128.0" text="Appointment Description" />
+        <Label layoutX="14.0" layoutY="164.0" text="Appointment Location" />
+        <Label layoutX="14.0" layoutY="198.0" text="Contact" />
+        <Label layoutX="14.0" layoutY="234.0" text="Type" />
+        <Label layoutX="13.0" layoutY="274.0" text="Start Date/Time" />
+        <Label layoutX="13.0" layoutY="312.0" text="End Date/Time" />
+        <Label layoutX="13.0" layoutY="345.0" text="Customer ID" />
+        <Label layoutX="13.0" layoutY="382.0" text="User ID" />
+        <TextField fx:id="appIDField" editable="false" layoutX="165.0" layoutY="53.0" prefHeight="26.0" prefWidth="201.0" promptText="Auto-Generated" />
+        <TextField fx:id="appTitleField" layoutX="165.0" layoutY="87.0" prefHeight="26.0" prefWidth="201.0" />
+        <TextField fx:id="appDescriptionField" layoutX="165.0" layoutY="124.0" prefHeight="26.0" prefWidth="201.0" />
+        <TextField fx:id="appLocationField" layoutX="165.0" layoutY="160.0" prefHeight="26.0" prefWidth="201.0" />
+        <TextField fx:id="appTypeField" layoutX="165.0" layoutY="230.0" prefHeight="26.0" prefWidth="201.0" />
+        <DatePicker fx:id="startDatePicker" layoutX="165.0" layoutY="270.0" prefHeight="26.0" prefWidth="130.0" />
+        <ComboBox fx:id="startTimeCombo" layoutX="311.0" layoutY="270.0" prefHeight="26.0" prefWidth="110.0" />
+        <DatePicker fx:id="endDatePicker" layoutX="165.0" layoutY="308.0" prefHeight="26.0" prefWidth="130.0" />
+        <ComboBox fx:id="endTimeCombo" layoutX="311.0" layoutY="308.0" prefHeight="26.0" prefWidth="110.0" />
+        <ComboBox fx:id="appContactCombo" layoutX="165.0" layoutY="194.0" prefHeight="26.0" prefWidth="201.0" />
+        <ComboBox fx:id="customerIDCombo" layoutX="165.0" layoutY="341.0" prefHeight="26.0" prefWidth="201.0" />
+        <ComboBox fx:id="userIDCombo" layoutX="165.0" layoutY="378.0" prefHeight="26.0" prefWidth="201.0" />
+        <Button fx:id="appSaveButton" layoutX="174.0" layoutY="436.0" mnemonicParsing="false" onAction="#onActionSaveApp" prefHeight="26.0" prefWidth="60.0" text="Save" />
+        <Button fx:id="appCancelButton" layoutX="244.0" layoutY="436.0" mnemonicParsing="false" onAction="#onActionCancelApp" text="Cancel" />
+    </children>
+</AnchorPane>
